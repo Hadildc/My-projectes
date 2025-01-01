@@ -2,28 +2,20 @@
 
 int main() {
     float a, b, c, discriminant;
-
-    // طلب إدخال القيم من المستخدم
-    printf("أدخل قيمة a: ");
+    printf("Enter the value of a: ");
     scanf("%f", &a);
-    printf("أدخل قيمة b: ");
+    printf("أEnter the value of b: ");
     scanf("%f", &b);
-    printf("أدخل قيمة c: ");
+    printf("Enter the value of c: ");
     scanf("%f", &c);
-
-    // حساب المميز
     discriminant = b * b - 4 * a * c;
-
-    // طباعة قيمة المميز
-    printf("قيمة المميز هي: %.2f\n", discriminant);
-
-    // تحديد طبيعة الجذور بناءً على المميز
+    printf("The value of the discriminant is:%.2f\n", discriminant);
     if (discriminant > 0) {
-        printf("للمعادلة جذور حقيقية ومختلفة.\n");
+        printf("The equation has real and distinct roots.\n");
     } else if (discriminant == 0) {
-        printf("للمعادلة جذر حقيقي واحد.\n");
+        printf("The equation has one real root.\n");
     } else {
-        printf("للمعادلة جذور غير حقيقية (خيالية).\n");
+        printf("The equation has unreal (imaginary) roots.\n");
     }
 
     return 0;
